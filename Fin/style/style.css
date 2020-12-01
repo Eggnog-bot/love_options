@@ -1,6 +1,7 @@
 body{
     background-color: palevioletred;
     margin:0;
+    
 }
 .centerr {  text-align: center;
 }
@@ -16,6 +17,7 @@ body{
     margin: 20px 20px;
     z-index: 0;
     transition: transform .5s, z-index 0s .2s;
+    
 }
 .card-container:hover {
     transition: transform .5s, z-index 0s 0s;
@@ -31,14 +33,15 @@ body{
 .card-container:hover .black-h {
     transform: rotateY(180deg);
     transition: transform .5s;
-    background-color: white;
+    background-color: rgb(197, 68, 68);
     color: black;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .card {
     /* border: 8px dotted green; */
     margin: 1px;
+    padding: 10px;
     width: 150px;
     height: 200px;
     transition: transform 1.5s;
@@ -57,7 +60,7 @@ body{
     position: absolute;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: rgb(226, 155, 203);
     border: 3px solid white;
     border-radius: 20px;
     overflow: hidden;
@@ -108,10 +111,7 @@ body{
     background-color: black;
 } */
  
- 
- img {
-   display: block;
- }
+
 
  .titlesec {
      text-align: left;
@@ -124,14 +124,16 @@ body{
     background-color: rgba(189, 52, 52, 0.438);
     width: windowpx;
      height: 300px;
-     overflow-x: hidden;
+     display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
  }
  .sidenav {
     width: 130px;
-    height: 210px;
+    height: 240px;
     position: fixed;
     z-index: 1;
-    top: 500px;
+    top: 400px;
     right: 20px;
     text-align-last: left;
     background: rgb(226, 187, 187);
