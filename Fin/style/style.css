@@ -93,6 +93,9 @@ body{
 
 .front > * {margin: 5px auto;}
 .front > h4 {font-size: 1.5em; color: var(white);}
+.fon{
+    font-family: 'Love Ya Like A Sister', cursive;
+}
 
 .back > div {
     width: 80%;
@@ -132,11 +135,13 @@ body{
     width: 130px;
     height: 240px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 400px;
     right: 20px;
     text-align-last: left;
     background: rgb(226, 187, 187);
+    border:4px solid lightcoral;
+    border-radius: 20px;
     overflow-x: hidden;
     padding: 8px ;
 
@@ -144,7 +149,28 @@ body{
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #bd4ab3;
+    font-size: 23px;
+    color: #bd4ab38a;
     display: block;
+}
+
+.sidenave a:hover {
+    cursor: pointer;
+}
+.comment{
+    position: absolute;
+    text-align: center;
+    color: rgb(163, 52, 94);
+    background-color: rgb(226, 155, 203);
+    border: 6px solid rgb(163, 52, 94);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+    width: 800px;
+    height: 170px;
+    display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    ;
 }
